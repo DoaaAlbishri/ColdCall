@@ -22,12 +22,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ul-dD-lUA">
-                                <rect key="frame" x="115" y="530" width="184" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ul-dD-lUA">
+                                <rect key="frame" x="105" y="781" width="204" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="9Pn-Hm-XOe"/>
+                                    <constraint firstAttribute="height" constant="51" id="GEZ-0h-gzX"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cold Call">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <backgroundConfiguration key="background" cornerRadius="0.0">
+                                        <color key="backgroundColor" red="0.24261253909015745" green="1" blue="0.96325613216197459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
@@ -39,9 +43,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0ul-dD-lUA" secondAttribute="bottom" constant="30" id="0S3-Uw-Naa"/>
                             <constraint firstItem="5Mq-eB-aHM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="3SS-Rk-eFL"/>
-                            <constraint firstItem="0ul-dD-lUA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dcr-Ad-P6c"/>
-                            <constraint firstItem="0ul-dD-lUA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="Dez-QT-XjP"/>
+                            <constraint firstItem="0ul-dD-lUA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bfW-lS-mst"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Mq-eB-aHM" secondAttribute="trailing" id="ciO-DF-cpQ"/>
                             <constraint firstItem="5Mq-eB-aHM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gBZ-nt-Eoh"/>
                             <constraint firstItem="5Mq-eB-aHM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ldm-YI-rGw"/>
@@ -62,9 +66,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
